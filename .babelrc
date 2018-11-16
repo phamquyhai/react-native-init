@@ -1,0 +1,39 @@
+{
+  "presets": ["module:metro-react-native-babel-preset", "@babel/preset-flow"],
+  "plugins": [
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "babel-plugin-root-import",
+      {
+        "rootPathPrefix": "~",
+        "rootPathSuffix": "app"
+      }
+    ]
+  ],
+  "retainLines": true,
+  "env": {
+    "production": {
+      "plugins": [
+        [
+          "babel-plugin-root-import",
+          {
+            "rootPathPrefix": "~",
+            "rootPathSuffix": "app"
+          }
+        ],
+        ["transform-remove-console"],
+        [
+          "@babel/plugin-proposal-decorators",
+          {
+            "legacy": true
+          }
+        ]
+      ]
+    }
+  }
+}

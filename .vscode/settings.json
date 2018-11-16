@@ -1,0 +1,24 @@
+{
+  "flow.useNPMPackagedFlow": true,
+  "prettier.eslintIntegration": true,
+  "editor.formatOnSave": true,
+  "javascript.validate.enable": false,
+  "flow.showStatus": true,
+  "prettier.parser": "flow",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules/": true,
+    "**/.babelrc": true,
+    "**/.buckconfig": true,
+    "**/.*": true,
+    "**/jsconfig.json": true,
+    "generatorAssets.js": true,
+    "yarn.lock": true,
+    "app.json": true,
+    "**/build/**": true
+  }
+}
